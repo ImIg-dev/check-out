@@ -1,0 +1,236 @@
+[gd_scene format=3 uid="uid://cf6ohsc2sk7c4"]
+
+[ext_resource type="Script" uid="uid://bjn1nc1oxewgg" path="res://scripts/menu.gd" id="1_g3eks"]
+[ext_resource type="Script" uid="uid://djmksgf0301mu" path="res://scripts/saver_node.gd" id="2_v86rl"]
+[ext_resource type="Texture2D" uid="uid://c1hg8klxa2x3o" path="res://textures/main-menu-background.png" id="3_13sgg"]
+[ext_resource type="Texture2D" uid="uid://dcr61ku47gvmv" path="res://textures/credits-paper.png" id="4_aaywf"]
+[ext_resource type="AudioStream" uid="uid://ck0qsts0tcjr7" path="res://sounds/accordion.ogg" id="4_i6lef"]
+[ext_resource type="FontFile" uid="uid://bmn77pk5hq873" path="res://fonts/VCR_OSD_MONO_1.001.ttf" id="5_70i5f"]
+[ext_resource type="Texture2D" uid="uid://be0hkjbt858la" path="res://textures/credits.png" id="6_mj5lg"]
+[ext_resource type="Texture2D" uid="uid://dmjctb7stecyl" path="res://textures/radio-dials-back.png" id="7_yt8fu"]
+[ext_resource type="Texture2D" uid="uid://djv6bxva2jar6" path="res://textures/radio-dials-dial.png" id="8_4umqm"]
+[ext_resource type="Texture2D" uid="uid://c746krrefja8j" path="res://textures/radio.png" id="10_4umqm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g7nvd"]
+font = ExtResource("5_70i5f")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_aaywf"]
+font = ExtResource("5_70i5f")
+font_size = 32
+font_color = Color(0.12156863, 0.12156863, 0.12156863, 1)
+
+[node name="menu" type="Control" unique_id=806764176]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g3eks")
+
+[node name="Saver Node" type="Node" parent="." unique_id=689285695]
+script = ExtResource("2_v86rl")
+properties_to_save = Array[String](["mstr_vol_var", "music_vol_var", "sfx_vol_var"])
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=36571444]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_13sgg")
+expand_mode = 1
+
+[node name="credits" type="TextureRect" parent="." unique_id=1056671259]
+custom_minimum_size = Vector2(200, 500)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.65799
+offset_top = 52.0
+offset_right = 200.65784
+offset_bottom = 552.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_aaywf")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="credits" unique_id=2140582353]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="credits/VBoxContainer" unique_id=1853603253]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_70i5f")
+theme_override_font_sizes/font_size = 6
+text = "CREDITS"
+label_settings = SubResource("LabelSettings_g7nvd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="credits/VBoxContainer" unique_id=2007486205]
+layout_mode = 2
+size_flags_vertical = 6
+text = "a game by:
+ImIg and Makss"
+label_settings = SubResource("LabelSettings_aaywf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="credits/VBoxContainer" unique_id=851779880]
+layout_mode = 2
+size_flags_vertical = 6
+text = "design:
+ImIg and Makss"
+label_settings = SubResource("LabelSettings_aaywf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="credits/VBoxContainer" unique_id=2126170480]
+layout_mode = 2
+size_flags_vertical = 6
+text = " art and animation:
+ImIg"
+label_settings = SubResource("LabelSettings_aaywf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="credits/VBoxContainer" unique_id=134679825]
+layout_mode = 2
+size_flags_vertical = 6
+text = "music a sfx:
+freesound (CC0)"
+label_settings = SubResource("LabelSettings_aaywf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="." unique_id=1968940731]
+stream = ExtResource("4_i6lef")
+pitch_scale = 0.7
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="radio" type="TextureRect" parent="." unique_id=424264151]
+z_index = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -471.0
+offset_top = -674.0
+offset_right = 471.0
+offset_bottom = -350.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_yt8fu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="radio" unique_id=24593301]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 52.0
+offset_right = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="music_vol" type="TextureRect" parent="radio/HBoxContainer" unique_id=730136582]
+layout_mode = 2
+size_flags_horizontal = 3
+offset_transform_enabled = true
+texture = ExtResource("8_4umqm")
+stretch_mode = 3
+
+[node name="mstr_vol" type="TextureRect" parent="radio/HBoxContainer" unique_id=572449377]
+layout_mode = 2
+size_flags_horizontal = 3
+offset_transform_enabled = true
+texture = ExtResource("8_4umqm")
+stretch_mode = 3
+
+[node name="sfx_vol" type="TextureRect" parent="radio/HBoxContainer" unique_id=1666214774]
+layout_mode = 2
+size_flags_horizontal = 3
+offset_transform_enabled = true
+texture = ExtResource("8_4umqm")
+stretch_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1889110345]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_mj5lg")
+expand_mode = 1
+
+[node name="credits_button" type="TextureButton" parent="TextureRect2" unique_id=83390922]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 231.0
+offset_right = 261.0
+offset_bottom = 323.0
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1382996531]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("10_4umqm")
+expand_mode = 1
+
+[node name="radio_button" type="TextureButton" parent="TextureRect3" unique_id=922919643]
+layout_mode = 0
+offset_left = 847.0
+offset_top = 391.0
+offset_right = 967.0
+offset_bottom = 444.0
+
+[node name="play" type="TextureButton" parent="." unique_id=2123118100]
+layout_mode = 0
+offset_left = 487.0
+offset_top = 328.0
+offset_right = 805.0
+offset_bottom = 604.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1440233545]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="button_up" from="TextureRect2/credits_button" to="." method="_on_credits_button_button_up"]
+[connection signal="mouse_entered" from="TextureRect2/credits_button" to="." method="_on_credits_button_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect2/credits_button" to="." method="_on_credits_button_mouse_exited"]
+[connection signal="button_up" from="TextureRect3/radio_button" to="." method="_on_radio_button_button_up"]
+[connection signal="mouse_entered" from="TextureRect3/radio_button" to="." method="_on_radio_button_mouse_entered"]
+[connection signal="mouse_exited" from="TextureRect3/radio_button" to="." method="_on_radio_button_mouse_exited"]
+[connection signal="button_down" from="play" to="." method="_on_play_button_down"]

@@ -1,0 +1,3 @@
+2026-09-27T16:58:08.986493Z  INFO backstitch_rust_core::helpers::tracing: 98: Tracing subscriber initialized
+2026-09-27T16:58:08.986519Z  INFO backstitch_rust_core::interop::extension: 30: ** on_level_init: Scene
+2026-09-27T16:58:17.968289Z  INFO backstitch_rust_core::interop::extension: 73: ** on_level_deinit: Scene

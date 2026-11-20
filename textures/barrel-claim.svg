@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="108mm"
+   height="121mm"
+   viewBox="0 0 108 121"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmapa.svg"
+   inkscape:export-xdpi="44.256927"
+   inkscape:export-ydpi="44.256927"
+   sodipodi:docname="barrel-claim.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4520903"
+     inkscape:cx="220.37196"
+     inkscape:cy="284.7619"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="108"
+       height="121"
+       id="page1"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter14"
+       x="-0.11187107"
+       y="-0.11187107"
+       width="1.2237421"
+       height="1.2237421">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.23002012"
+         id="feGaussianBlur14" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.8068549,-90.727418)">
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2.565;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14)"
+       id="circle1"
+       cx="61.632057"
+       cy="100.95147"
+       r="8.1993866" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2.565;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14)"
+       id="circle8"
+       cx="105.05891"
+       cy="126.02397"
+       r="8.1993866" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2.565;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14)"
+       id="circle9"
+       cx="105.05891"
+       cy="176.16899"
+       r="8.1993866" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2.565;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14)"
+       id="circle10"
+       cx="61.632053"
+       cy="201.24149"
+       r="8.1993866" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2.565;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14)"
+       id="circle11"
+       cx="18.205208"
+       cy="176.16898"
+       r="8.1993866" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2.565;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter14)"
+       id="circle12"
+       cx="18.205208"
+       cy="126.02397"
+       r="8.1993866" />
+  </g>
+</svg>
